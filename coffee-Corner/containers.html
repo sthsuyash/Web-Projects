@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Containers</title>
+    <style>
+      :root {
+        --box-color: cyan;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        background: black;
+      }
+
+      .container {
+        height: 50rem;
+        padding-top: 14rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      #first-box {
+        opacity: 0.6;
+        box-shadow: 1px 1px 10px 1px cyan, -1px -1px 10px 1px cyan;
+        background: var(--box-color);
+        border-radius: 10px;
+        height: 35%;
+        width: 20%;
+        position: relative;
+        animation: up 5s infinite;
+      }
+
+      #second-box {
+        box-shadow: 1px 1px 10px 1px yellow, -1px -1px 10px 1px yellow;
+        background: yellow;
+        border-radius: 10px;
+        opacity: 0.6;
+        height: 35%;
+        width: 20%;
+        animation: mymove 5s ease-out infinite;
+      }
+
+      #third-box {
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px lightgreen, -1px -1px 10px 1px lightgreen;
+        background: lightgreen;
+        opacity: 0.6;
+        height: 35%;
+        width: 20%;
+        position: relative;
+        animation: down 5s infinite;
+      }
+
+      @keyframes mymove {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(0.7);
+          opacity: 0.6;
+          box-shadow: 1px 1px 10px 1px cyan, -1px -1px 10px 1px cyan;
+          background: var(--box-color);
+        }
+        50% {
+          transform: scale(0.5);
+        }
+        75% {
+          transform: scale(0.7);
+          box-shadow: 1px 1px 10px 1px lightgreen, -1px -1px 10px 1px lightgreen;
+          background: lightgreen;
+          opacity: 0.6;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes up {
+        0% {
+          top: 0px;
+          box-shadow: 1px 1px 10px 1px yellow, -1px -1px 10px 1px yellow;
+          opacity: 0.6;
+          background: yellow;
+        }
+        25% {
+          top: 200px;
+          box-shadow: 1px 1px 10px 1px cyan, -1px -1px 10px 1px cyan;
+          opacity: 0.6;
+          background: var(--box-color);
+        }
+        50% {
+          top: 0px;
+          box-shadow: 1px 1px 10px 1px yellow, -1px -1px 10px 1px yellow;
+          opacity: 0.6;
+          background: yellow;
+        }
+        75% {
+          top: -200px;
+          box-shadow: 1px 1px 10px 1px lightgreen, -1px -1px 10px 1px lightgreen;
+          opacity: 0.6;
+          background: lightgreen;
+        }
+        100% {
+          top: 0;
+          box-shadow: 1px 1px 10px 1px yellow, -1px -1px 10px 1px yellow;
+          opacity: 0.6;
+          background: yellow;
+        }
+      }
+
+      @keyframes down {
+        0% {
+          top: 0px;
+          box-shadow: 1px 1px 10px 1px yellow, -1px -1px 10px 1px yellow;
+          opacity: 0.6;
+          background: yellow;
+        }
+        25% {
+          top: -200px;
+          box-shadow: 1px 1px 10px 1px lightgreen, -1px -1px 10px 1px lightgreen;
+          opacity: 0.6;
+          background: lightgreen;
+        }
+        50% {
+          top: 0px;
+          box-shadow: 1px 1px 10px 1px yellow, -1px -1px 10px 1px yellow;
+          opacity: 0.6;
+          background: yellow;
+        }
+        75% {
+          top: 200px;
+          box-shadow: 1px 1px 10px 1px cyan, -1px -1px 10px 1px cyan;
+          opacity: 0.6;
+          background: var(--box-color);
+        }
+        100% {
+          top: 0;
+          box-shadow: 1px 1px 10px 1px yellow, -1px -1px 10px 1px yellow;
+          opacity: 0.6;
+          background: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="first-box"></div>
+      <div id="second-box"></div>
+      <div id="third-box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Fitness</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <img src="./assets/images/gym.png" alt="logo" />
+        <h1>Our Fitness</h1>
+      </section>
+
+      <!-- navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+        </ul>
+      </nav>
+
+      <!-- right for contact buttons -->
+      <section class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">E-mail</button>
+      </section>
+    </header>
+
+    <div class="container">
+      <section class="form-container">
+        <h1>Join The Fitness Group</h1>
+        <form action="no action.php">
+          <div class="form-group">
+            <label for="name"
+              >Your Name:
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="male"
+              >Male:&nbsp;
+              <input type="radio" name="gender" id="male" /> </label
+            >&nbsp;
+            <label for="female"
+              >FeMale:&nbsp;
+              <input type="radio" name="gender" id="female" />
+            </label>
+          </div>
+          <div class="form-group form-age">
+            <label for="age"
+              >Age:&nbsp;
+              <input type="number" min="16" max="100" />
+            </label>
+          </div>
+          &nbsp;&nbsp;
+          <div class="form-group form-location">
+            <label for="location"
+              >Location:&nbsp;
+              <select name="location" id="location">
+                <option value="Gongabu" selected>Gongabu</option>
+                <option value="Banasthali">Banasthali</option>
+                <option value="Budhanilkantha">Budhanilkantha</option>
+                <option value="Kalanki">Kalanki</option>
+                <option value="Lazimpat">Lazimpat</option>
+                <option value="Lainchaur">Lainchaur</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="email"
+              >Email:&nbsp;
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+          </div>
+          <button class="btn form-btn">Submit</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="quote">
+      <p>
+        “All progress takes place outside the comfort zone.”<span>-Michal Joan Bobak</span>
+      </p>
+    </div>
+  </body>
+</html>

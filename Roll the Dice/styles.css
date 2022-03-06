@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --family: "Press Start 2P", cursive;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  padding-top: 2rem;
+  background-color: #131518;
+  font-family: var(--family);
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+  margin-bottom: 2.8rem;
+  text-shadow: 5px 0 #232931;
+  font-size: 5rem;
+  color: #e9cc4c;
+}
+
+p {
+  font-size: 1.6rem;
+  color: #0a7a55;
+}
+
+img {
+  width: 80%;
+}
+
+button {
+  display: block;
+  margin: 50px auto 0;
+  padding: 0.6rem 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+button:hover {
+  color: #d605d6;
+  box-shadow: 1px 1px 8px #d605d6, -1px -1px 8px #d605d6;
+}
+
+footer {
+  margin: 50px auto 100px;
+  color: #eeeeee;
+  text-align: center;
+}
+
+i {
+  font-style: normal;
+  font-family: sans-serif;
+  padding: 1rem 0;
+}
+
+.link-container {
+  margin: 1rem 0;
+}
+
+.fa-brands {
+  color: white;
+  padding: 20px 5px;
+}
+
+.visible {
+  visibility: hidden;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+}

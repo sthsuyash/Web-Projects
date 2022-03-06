@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  color: #404040;
+}
+
+p,
+ul {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  overflow: hidden;
+}
+
+.container {
+  padding: 10px;
+}
+
+.header-image-menu img {
+  position: relative;
+  width: 98.7%;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.coffee {
+  font-style: italic;
+}
+
+.header-image-menu h3 {
+  font-size: 3rem;
+  position: absolute;
+  top: 200px;
+  width: 5%;
+  margin: 70px;
+}
+
+#top-header {
+  text-align: center;
+  height: 30px;
+}
+
+#logo {
+  float: left;
+  padding: none;
+  margin: none;
+  height: 20px;
+  width: 50%;
+}
+
+#logo img {
+  width: 12%;
+  float: left;
+  padding: 0px 20px;
+}
+
+#logo h2 {
+  position: absolute;
+  top: 2.5rem;
+  left: 8rem;
+}
+
+#logo h2:hover {
+ color: #912929;
+}
+
+#menu {
+  margin: 0;
+  float: right;
+  width: 50%;
+  height: 100%;
+  margin: none;
+}
+
+#menu ul {
+  text-align: center;
+  float: right;
+  margin: none;
+}
+
+#menu li {
+  display: inline-block;
+  padding: none;
+  margin: none;
+}
+
+#menu li a {
+  display: inline-block;
+  padding: 0em 1.5em;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: rgb(134, 34, 34);
+  border-radius: 15%;
+  border: 0.5px solid rgba(0, 0, 255, 0.1);
+  transition-duration: 0.6s;
+}
+
+#menu li:hover a {
+  color: #ffffff;
+  text-decoration: underline;
+  background: rgb(202, 177, 177);
+}
+
+footer {
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  background-color: #c7c0c6;
+}
+
+footer p {
+  margin: 0;
+  padding: 20px;
+}
+
+footer h3 a {
+  text-decoration: none;
+}
+
+footer h3 a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
+.foot {
+  display: inline-block;
+}
+
+.foot img {
+  height: 30px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.foot img:hover {
+  transform: scale(1.3);
+  transition: transform 0.7s;
+}
