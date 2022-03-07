@@ -1,5 +1,5 @@
 let heading = document.querySelector("h1");
-
+document.querySelector('button').addEventListener("click", roll);
 function roll() {
     // generating random numbers from 1 to 6 to change the dice numbers for winner
     // generating separately as we need two different for both players
@@ -10,6 +10,7 @@ function roll() {
     let player1Img = document.querySelector(".img1");
     let player2Img = document.querySelector(".img2");
 
+    // firstly the player1 and player2 paragraph are hidden as there are no dice, so to show the paragraph after the dice is shown, visiblity:hidden class is removed.
     document.querySelectorAll("p")[0].classList.remove("visible");
     document.querySelectorAll("p")[1].classList.remove("visible");
 
