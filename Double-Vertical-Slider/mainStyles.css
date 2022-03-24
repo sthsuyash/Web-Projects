@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/*defining root variables*/
+:root {
+  --puffin-bg-color: #adc2fc;
+  --puffin-text: #5b94c5;
+  --house-bg-color: #a2aa31;
+  --house-text: #854a2d;
+  --dog--bg-color: #746f2d;
+  --dog-text: #635028;
+  --cliff-bg-color: #79b8e9;
+  --cliff-text: #3b4b4b;
+  --chicago-city-bg-color: #336999;
+  --chicago-city-text: #ffe032;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+
+main {
+  position: relative; /*positioned relative to its original position so that the children element's position can be */
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-slide {
+  transition: transform 0.5s ease-in-out;
+  height: 100vh;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left-slide > section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-slide h1 {
+  font-size: 3rem;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+
+.left-slide p {
+  font-size: 1.2rem;
+}
+
+.right-slide {
+  transition: transform 0.5s ease-in-out;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 75%;
+}
+
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+main .action-buttons button {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  z-index: 100;
+}
+
+main .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  box-shadow: -0.1px -0.1px 4px, 0px 0.1px 4px;
+}
+
+main .action-buttons .down-button:hover {
+  box-shadow: none;
+}
+
+main .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 0.1px 0.1px 4px, -0px -0.1px 4px;
+}
+
+main .action-buttons .up-button:hover {
+  box-shadow: none;
+}
+
+#house {
+  background-image: linear-gradient(30deg, var(--house-bg-color), #bbcbdd);
+}
+
+#house h1,
+#house p {
+  color: var(--house-text);
+}
+
+#puffins {
+  background-image: linear-gradient(-200deg, var(--puffin-bg-color), #fff);
+}
+
+#puffins h1,
+#puffins p {
+  color: var(--puffin-text);
+}
+
+#dog {
+  background-image: linear-gradient(190deg, var(--dog--bg-color), #d0c0a1);
+}
+
+#dog h1,
+#dog p {
+  color: var(--dog-text);
+}
+
+#cliff {
+  background-image: linear-gradient(110deg, var(--cliff-bg-color), #d5e2ec);
+}
+
+#cliff h1,
+#cliff p {
+  color: var(--cliff-text);
+}
+
+#chicago-city {
+  background-image: linear-gradient(170deg,var(--chicago-city-bg-color),#c2d5e0);
+}
+
+#chicago-city h1,
+#chicago-city p {
+  color: var(--chicago-city-text);
+}
