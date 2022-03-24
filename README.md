@@ -10,6 +10,6 @@
 | 5 | TinDog | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/TinDog) | [Live](https://tindog-sthsuyash.netlify.app)
 | 6 | Coffee Corner | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/coffee-Corner) | [Live](https://coffee-corner-sthsuyash.netlify.app)
 | 7 | Gym Project | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/gymProject) | [Live](https://gym-project-sthsuyash.netlify.app)
-| 8 | Guess The Number! | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/Guess-the-number) | [Live](https://guess-the-number-sthsuyash.netlify.app)
+| 8 | Guess My Number! | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/Guess-my-number) | [Live](https://guess-my-number-sthsuyash.netlify.app)
 | 9 | Modal | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/Modal) | [Live](https://modal-sthsuyash.netlify.app) 
 | 10 | Double Vertical Slider | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/Double-vertical-slider) | [Live](https://double-vertical-slider-sthsuyash.netlify.app) | 
