@@ -1,0 +1,240 @@
+/*** import google font ***/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*** root variables ***/
+:root {
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    --universal-color: #8329a7;
+}
+
+/* remove default styles of browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/*** changes in form tag ***/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 45%; */
+    max-width: 400px;
+    box-shadow: var(--box-shadow);
+    padding: 50px;
+}
+
+/*** title text ***/
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*** margin to the bottom of the label text ***/
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+/*** change the look and feel of input tags ***/
+form div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: var(--box-shadow);
+    font-family: inherit;
+    font-size: 15px;
+}
+
+/*** spaces and color changing effects ***/
+form div {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border: 2px solid var(--universal-color);
+    border-radius: 8px;
+}
+
+
+/*** style the icons ***/
+form div i {
+    position: absolute;
+    padding: 12px 11px;
+}
+
+/*** error class , icons ***/
+.failure-icon,
+.error {
+    color: red;
+}
+
+.success-icon {
+    color: green;
+}
+
+.error {
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
+.success-icon,
+.failure-icon {
+    right: 0;
+    opacity: 0;
+}
+
+/*** submit button ***/
+button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--universal-color);
+    border: 2px solid var(--universal-color);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: all 0.4s ease-in-out;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/*** social buttons ***/
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-1,
+.btn-2 {
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f3f3f3;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-1:hover {
+    background-color: #d4d4d4;
+}
+
+.btn-2 {
+    background-color: #44609c;
+    color: #fff;
+}
+
+.btn-2:hover {
+    background-color: #6583c4;
+
+}
+
+.or {
+    text-align: center;
+    font-weight: 600;
+}
+
+.question {
+    font-size: 16px;
+}
+
+span {
+    color: var(--universal-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+span:hover {
+    color: #bf9fcc;
+}
+
+/*** container section ***/
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*** content section ***/
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--universal-color);
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+
+/*** main illustration ***/
+.image {
+    background-image: url("images/illustration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 65%;
+}
+
+/*** text section below the main illustration ***/
+.text {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+form {
+    width: 45%;
+    max-width: none;
+}
+
+/*** responsive design ***/
+
+/* for screen width upto 900px and less  */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    form,
+    .content {
+        width: 100%;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    .image {
+        height: 70vh;
+    }
+}
+
+/* for screen with width 425px and less */
+@media (max-width: 425px) {
+    form {
+        padding: 20px;
+    }
+}
