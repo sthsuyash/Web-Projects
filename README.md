@@ -15,3 +15,4 @@
 |  9   | Modal                  | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/Modal)                    | [Live](https://modal-sthsuyash.netlify.app)                  |
 |  10  | Double Vertical Slider | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/Double-vertical-slider)   | [Live](https://double-vertical-slider-sthsuyash.netlify.app) |
 |  11  | Pig Game               | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/Pig-Game)                 | [Live](https://pig-game-sthsuyash.netlify.app)               |
+|  12  | Form Validation              | [Code](https://github.com/sthsuyash/Web-Projects/tree/main/JS_FormValidation)                 | [Live](https://js-form-validation-sthsuyash.netlify.app)               |
