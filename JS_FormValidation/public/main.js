@@ -12,11 +12,12 @@ let username = id(`username`),
 
 // calling the event handler 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    if (!engine(username, 0, 'User Name cannot be blank!') ||
+        !engine(email, 1, 'Email cannot be blank!') ||
+        !engine(password, 2, 'Password cannot be blank!')) {
+        e.preventDefault();
+    }
 
-    engine(username, 0, 'User Name cannot be blank!');
-    engine(email, 1, 'Email cannot be blank!');
-    engine(password, 2, 'Password cannot be blank!');
 });
 
 /*** 
@@ -35,6 +36,7 @@ let engine = (id, index, message) => {
         // icons
         failureIcon[index].style.opacity = '1'; // display error icon
         successIcon[index].style.opacity = '0';
+        return 0;
     }
     else { // success
         errorMsg[index].innerHTML = '';
@@ -43,5 +45,7 @@ let engine = (id, index, message) => {
         // icons
         failureIcon[index].style.opacity = '0';
         successIcon[index].style.opacity = '1'; // display success icon
+
+        return 1;
     }
 }
