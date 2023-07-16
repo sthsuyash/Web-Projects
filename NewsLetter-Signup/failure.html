@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Failure</title>
+
+    <!-- custom css -->
+    <style>
+      .container-custom {
+        border-radius: 8px;
+      }
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  </head>
+
+  <body class="bg-secondary">
+    <div class="container-fluid text-lg-center text-white p-5">
+      <div class="container bg-dark p-5 container-custom">
+        <h1 class="display-4 text-danger">Oh no!!</h1>
+        <hr />
+        <p>There was an error signing you up, Please try again.</p>
+        <form action="/re" method="post">
+          <button class="btn btn-primary btn-sm" type="submit">
+            Goto Home Page
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
